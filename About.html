@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern University</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Admission</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!--about us content Here!-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 id="about">Modern University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel, laudantium asperiores nisi, sit, 
+                    omnis unde mollitia aliquam magni magnam officiis laboriosam at ducimus aperiam cupiditate ut rem 
+                    accusantium a!</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW!</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg">
+            </div>
+        </div>
+    </section>
+    
+<!--Footer-->
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel, laudantium asperiores nisi, sit, 
+        omnis unde mollitia aliquam magni magnam officiis laboriosam at ducimus aperiam cupiditate ut rem 
+        accusantium a!</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+</section>
+
+
+    <!--JavaScript Section-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+                navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
